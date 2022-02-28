@@ -287,7 +287,7 @@ section .row:nth-child(even) div:nth-child(2)
           transform: translateX(0%);
       }
 }
-@media (max-width: 650px)
+@media (max-width: 800px)
 {
   .header
 {
