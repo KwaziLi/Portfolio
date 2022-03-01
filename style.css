@@ -26,7 +26,7 @@ body:before {
   width: 100%;
 }
 .header{
-  min-height: 600px;
+  min-height: 300px;
 }
 nav {
   position: absolute;
@@ -107,8 +107,8 @@ section {
 }
 section .row {
   position: relative;
-  top: -25%;
-  width: 50%;
+  top: -40%;
+  width: 30%;
   display: flex;
   padding: 10px 0;
   padding-left: 50px;
