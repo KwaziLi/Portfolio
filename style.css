@@ -14,9 +14,6 @@ body:before {
   height: 100%;
   width: 100%;
 }
-html {
-  height: -webkit-fill-available;
-}
 .header{
   min-height: 600px;
 }
@@ -91,8 +88,8 @@ hello {
 section {
   position: relative;
   width: 100%;
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
+  height: 100%;
+  height: -webkit-fill-available;
   display: flex;
   flex-direction: column;
   user-select: none;
