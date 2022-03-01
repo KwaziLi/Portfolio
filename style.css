@@ -167,7 +167,7 @@ section .row:nth-child(even) div:nth-child(2) {
           transform: translateX(0%);
       }
 }
-@media (min-width: 578px) {
+@media (min-width: 700px) {
   .content p:hover {
     color: white;
     text-shadow: 0 0 120px white;
@@ -206,7 +206,7 @@ section .row:nth-child(even) div:nth-child(2) {
       width: 100%;
     }
 }
-@media (max-width: 578px) {
+@media (max-width: 700px) {
 nav {
   position: absolute;
   z-index: 1;
