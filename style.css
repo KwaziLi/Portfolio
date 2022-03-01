@@ -35,7 +35,7 @@ nav {
 }
 li:hover .topmenu_item::after {
   width: 100%;
-  transition: all .5s ease .3s;
+  transition: all .5s ease .4s;
 }
 li {
   list-style: none;
