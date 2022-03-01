@@ -115,6 +115,8 @@ section .row {
   white-space: nowrap;
   font-size: 200px;
   transform: rotate(-30deg);
+  user-select: none;
+  -webkit-touch-callout: none;
 }
 i {
   color: rgba(0, 0, 0, 0.5);
@@ -245,6 +247,7 @@ li {
     user-select: none;
     cursor: default;
     width: 320px;
+    -webkit-touch-callout: none;
   }
   .content .title {
     color: #1f1f25;
@@ -311,6 +314,7 @@ li {
     user-select: none;
     cursor: default;
     width: 215px;
+    -webkit-touch-callout: none;
   }
   .content .title {
     color: #1f1f25;
