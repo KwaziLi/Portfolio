@@ -17,6 +17,102 @@ body {
    -ms-user-select: none;
    user-select: none;
 }
+.container {
+    position: absolute;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+    justify-content: center;
+    min-height: 800px;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+}
+.container .card {
+    position: relative;
+    width: 600px;
+    height: 800px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    opacity:0;
+    transition: 1s;
+    animation: glass 3s 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    }
+    @keyframes glass{
+    0%{
+    opacity:0;
+    }
+    100% {
+    opacity:1;
+    }
+}
+.container .card_1 {
+    margin-left: 30px;
+}
+.container .card_2 {
+    margin:0px 90px 0 55px;
+}
+.container .card .card_content {
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 1s;
+}
+.container .card:hover .card_content {
+    transform: translateY(0px);
+    opacity: 1;
+}
+.container .card .card_content h2 {
+    position: absolute;
+    top: -30px;
+    right: 30px;
+    font-size: 8em;
+    color: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+}
+.container .card .card_content h3 {
+    font-size: 1.8em;
+    color: #fff;
+    z-index: 1;
+}
+.container .card .card_content p {
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+}
+.container .card .card_content a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 15px;
+    background: #fff;
+    color: #000;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+/*
+About
+При нажатии появляется glassmorphism карточка с моей фоткой в дубаи и небольшой информацией обо мне.
+
+Portfolio
+Скроллящийся список работ  видел в видосе индуса
+
+Contact
+Glassmorphiesm карточки с логотипами
+*/
 body:before {
   content: "";
   position: absolute;
@@ -53,7 +149,9 @@ li {
 }
 .content {
   position: absolute;
-  top: 35%;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
   left: 8%;
   cursor: default;
   display: block;
@@ -178,7 +276,112 @@ section .row:nth-child(even) div:nth-child(2) {
           transform: translateX(0%);
       }
 }
-@media (min-width: 578px) {
+@media (max-width: 1400px) {
+    .container {
+        position: absolute;
+        display: none;
+        align-items: center;
+        flex-wrap: wrap;
+        z-index: 1;
+        justify-content: center;
+        min-height: 500px;
+        top: 50%;
+        right: 0;
+        transform: translate(0, -50%);
+    }
+    .container .card {
+        position: relative;
+        width: 400px;
+        height: 500px;
+        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+        background: rgba(255, 255, 255, 0.1);
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(10px);
+    }
+    .container .card_1 {
+        margin-left: 30px;
+    }
+    .container .card_2 {
+        margin:0px 90px 0 55px;
+    }
+}
+@media (max-width: 980px) {
+    .container {
+        position: absolute;
+        display: none;
+        align-items: center;
+        flex-wrap: wrap;
+        z-index: 1;
+        justify-content: center;
+        min-height: 400px;
+        top: 50%;
+        right: 0;
+        transform: translate(0, -50%);
+    }
+    .container .card {
+        position: relative;
+        width: 300px;
+        height: 400px;
+        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+        background: rgba(255, 255, 255, 0.1);
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(10px);
+    }
+    .container .card_1 {
+        margin-left: 30px;
+    }
+    .container .card_2 {
+        margin:0px 90px 0 55px;
+    }
+}
+@media (max-width: 780px) {
+    .container {
+        position: absolute;
+        display: none;
+        align-items: center;
+        flex-wrap: wrap;
+        z-index: 1;
+        justify-content: center;
+        min-height: 300px;
+        top: 50%;
+        right: 0;
+        transform: translate(0, -50%);
+    }
+    .container .card {
+        position: relative;
+        width: 220px;
+        height: 350px;
+        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+        background: rgba(255, 255, 255, 0.1);
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(10px);
+    }
+    .container .card_1 {
+        margin-left: 30px;
+    }
+    .container .card_2 {
+        margin:0px 90px 0 55px;
+    }
+}
+@media (min-width: 625px) {
   .content p:hover {
     color: white;
     text-shadow: 0 0 120px white;
@@ -211,13 +414,17 @@ section .row:nth-child(even) div:nth-child(2) {
     }
     nav ul li a:after {
       content: "";
-      transition: .90s;
+      transition: .90s ease .1s;
     }
     nav ul li a:hover:after {
       width: 100%;
     }
 }
-@media (max-width: 578px) {
+@media (max-width: 625px) {
+.container {
+    display: none;
+    visibility: hidden;
+}
 nav {
   position: absolute;
   z-index: 1;
@@ -283,6 +490,9 @@ li {
   }
 }
 @media (max-width: 390px) {
+.container {
+    display: none;
+}
 nav {
   position: absolute;
   z-index: 1;
