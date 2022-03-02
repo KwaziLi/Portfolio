@@ -6,7 +6,7 @@
     <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="shortcut icon" href="C:\Users\DENIS\Desktop\favicon.ico" type="image/x-icon">
     <script>
         const appHeight = () => {
         const doc = document.documentElement
@@ -16,19 +16,35 @@
     appHeight()
     </script>
 </head>
-  <body>
-   <h4 id="author" style="display: none" title="GossJS">Denis Ignatev</h4>
+  <body>    
+      <div class="container" id="catalog" style="display:none;">
+        <div class="card card_1">
+            <div class="card_content">
+                <h2>wow</h2>
+                <h3>Card One</h3>
+                <p>fsanoaus fapsb f[aisbfusa[fb afusabf[sba jbsf</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <div class="card card_2">
+            <div class="card_content">
+                <h2>wow2</h2>
+                <h3>Card Two</h3>
+                <p>fsanoaus fapsb f[aisbfusa[fb afusabf[sba jbsdsff</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </div>
+    <h4 id="author" style="display: none" title="GossJS">Denis Ignatev</h4>
     <div class="header">
         <nav>
-            <ul class="topmenu">
-                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="topmenu_item" target="_blank">Home</a></li>
-                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="topmenu_item" target="_blank">About</a></li>
+            <ul class="topmenu ">
+                <li><a href="#" class="topmenu_item" onclick="look('catalog'); return false;">About</a></li>
                 <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="topmenu_item" target="_blank">Portfolio</a></li>
-                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="topmenu_item" target="_blank">Blog</a></li>
                 <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="topmenu_item" target="_blank">Contact</a></li>
             </ul>
-        </nav>
-    <!--О да, индусский код-->
+        </nav>  
+        <!--О да, индусский код-->
     <section>
       <div class="row">
           <div>
@@ -144,6 +160,7 @@
       </div>
       <div class="row">
           <div>
+              <!--вот оно-->
               <i class="fa fa-apple" aria-hidden="true"></i>
               <i class="fa fa-cc-diners-club" aria-hidden="true"></i>
               <i class="fa fa-try" aria-hidden="true"></i>
@@ -541,5 +558,23 @@
             <p>A student at Herzen University and just a very </br> good person. Certified iOS Developer.</p>
         </div>
     </div>
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+    VanillaTilt.init(document.querySelectorAll(".card"),{
+		max: 15,
+		speed: 1800,
+        glare: true,
+        "max-glare": 1,
+	});
+    </script>
+    <script>
+        function look(elemId) {
+    var elem = document.getElementById(elemId);
+ 
+    elem.style.display === "none" ?
+        elem.style.display = "flex" : elem.style.display = "none";
+}
+    </script>
    </body>
 </html>
