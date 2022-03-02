@@ -41,9 +41,8 @@ body {
     align-items: center;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
     opacity:0;
-    transition: 1s;
     animation: glass 3s 1;
     animation-fill-mode: forwards;
     animation-delay: 1s;
@@ -58,28 +57,17 @@ body {
 }
 .container .card_1 {
     margin-left: 30px;
+    background-image: url(https://sun9-39.userapi.com/impg/12V43sLdkrTwk-V3alh01c4y--8i8mHFc-R96Q/p-cjaCnRXEU.jpg?size=275x309&quality=96&sign=da8e913693b5c28a1312561b7c91c7dd&type=album);
+    background-size: 600px 800px;
 }
 .container .card_2 {
     margin:0px 90px 0 55px;
 }
 .container .card .card_content {
     padding: 20px;
-    text-align: center;
-    transform: translateY(100px);
-    opacity: 0;
-    transition: 1s;
-}
-.container .card:hover .card_content {
-    transform: translateY(0px);
+    text-align: top;
     opacity: 1;
-}
-.container .card .card_content h2 {
-    position: absolute;
-    top: -30px;
-    right: 30px;
-    font-size: 8em;
-    color: rgba(255, 255, 255, 0.05);
-    pointer-events: none;
+    transition: 1s;
 }
 .container .card .card_content h3 {
     font-size: 1.8em;
@@ -90,18 +78,6 @@ body {
     font-size: 1em;
     color: #fff;
     font-weight: 300;
-}
-.container .card .card_content a {
-    position: relative;
-    display: inline-block;
-    padding: 8px 20px;
-    margin-top: 15px;
-    background: #fff;
-    color: #000;
-    border-radius: 20px;
-    text-decoration: none;
-    font-weight: 500;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 /*
 About
@@ -291,8 +267,8 @@ section .row:nth-child(even) div:nth-child(2) {
     }
     .container .card {
         position: relative;
-        width: 400px;
-        height: 500px;
+        width: 390px;
+        height: 520px;
         box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
         border-radius: 15px;
         background: rgba(255, 255, 255, 0.1);
@@ -306,6 +282,8 @@ section .row:nth-child(even) div:nth-child(2) {
     }
     .container .card_1 {
         margin-left: 30px;
+        background-image: url(https://sun9-39.userapi.com/impg/12V43sLdkrTwk-V3alh01c4y--8i8mHFc-R96Q/p-cjaCnRXEU.jpg?size=275x309&quality=96&sign=da8e913693b5c28a1312561b7c91c7dd&type=album);
+        background-size: 390px 520px;
     }
     .container .card_2 {
         margin:0px 90px 0 55px;
@@ -341,6 +319,8 @@ section .row:nth-child(even) div:nth-child(2) {
     }
     .container .card_1 {
         margin-left: 30px;
+        background-image: url(https://sun9-39.userapi.com/impg/12V43sLdkrTwk-V3alh01c4y--8i8mHFc-R96Q/p-cjaCnRXEU.jpg?size=275x309&quality=96&sign=da8e913693b5c28a1312561b7c91c7dd&type=album);
+        background-size: 300px 400px;
     }
     .container .card_2 {
         margin:0px 90px 0 55px;
@@ -361,8 +341,8 @@ section .row:nth-child(even) div:nth-child(2) {
     }
     .container .card {
         position: relative;
-        width: 220px;
-        height: 350px;
+        width: 210px;
+        height: 280px;
         box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
         border-radius: 15px;
         background: rgba(255, 255, 255, 0.1);
@@ -376,6 +356,8 @@ section .row:nth-child(even) div:nth-child(2) {
     }
     .container .card_1 {
         margin-left: 30px;
+        background-image: url(https://sun9-39.userapi.com/impg/12V43sLdkrTwk-V3alh01c4y--8i8mHFc-R96Q/p-cjaCnRXEU.jpg?size=275x309&quality=96&sign=da8e913693b5c28a1312561b7c91c7dd&type=album);
+        background-size: 210px 280px;
     }
     .container .card_2 {
         margin:0px 90px 0 55px;
@@ -421,10 +403,6 @@ section .row:nth-child(even) div:nth-child(2) {
     }
 }
 @media (max-width: 625px) {
-.container {
-    display: none;
-    visibility: hidden;
-}
 nav {
   position: absolute;
   z-index: 1;
@@ -490,9 +468,6 @@ li {
   }
 }
 @media (max-width: 390px) {
-.container {
-    display: none;
-}
 nav {
   position: absolute;
   z-index: 1;
