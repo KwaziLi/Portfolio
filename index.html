@@ -1,4 +1,4 @@
-<!DOCTYPE html lang="en" class="notranslate" translate="no">
+<!DOCTYPE html class="notranslate" translate="no">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
@@ -15,23 +15,22 @@
     window.addEventListener('resize', appHeight)
     appHeight()
     </script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
 </head>
   <body>    
-      <div class="container" id="catalog" style="display:none;">
+      <div class="container" id="catalog" style="display:none">
         <div class="card card_1">
-            <div class="card_content">
+            <!--<div class="card_content">
                 <h2>wow</h2>
                 <h3>Card One</h3>
                 <p>fsanoaus fapsb f[aisbfusa[fb afusabf[sba jbsf</p>
                 <a href="#">Read More</a>
-            </div>
+            </div>-->
         </div>
         <div class="card card_2">
             <div class="card_content">
-                <h2>wow2</h2>
-                <h3>Card Two</h3>
-                <p>fsanoaus fapsb f[aisbfusa[fb afusabf[sba jbsdsff</p>
-                <a href="#">Read More</a>
+                <h3>Hyeta согласны?</h3>
+                <p>How blyat make reverse animation with js syka. Work in Progress</p>
             </div>
         </div>
     </div>
@@ -558,23 +557,27 @@
             <p>A student at Herzen University and just a very </br> good person. Certified iOS Developer.</p>
         </div>
     </div>
-
-    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+        function look(elemId) {
+    var elem = document.getElementById(elemId);
+ 
+    (elem.style.display === "none" && window.innerWidth) > 625?
+        elem.style.display = "flex" : elem.style.display = "none";}
+    </script>
     <script>
     VanillaTilt.init(document.querySelectorAll(".card"),{
 		max: 15,
 		speed: 1800,
         glare: true,
-        "max-glare": 1,
+        "max-glare": 0.5,
 	});
     </script>
     <script>
         function look(elemId) {
     var elem = document.getElementById(elemId);
  
-    elem.style.display === "none" ?
-        elem.style.display = "flex" : elem.style.display = "none";
-}
+    (elem.style.display === "none" && window.innerWidth) > 625?
+        elem.style.display = "flex" : elem.style.display = "none";}
     </script>
    </body>
 </html>
