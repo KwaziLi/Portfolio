@@ -15,7 +15,6 @@
     window.addEventListener('resize', appHeight)
     appHeight()
     </script>
-    <script type="text/javascript" src="vanilla-tilt.js"></script>
 </head>
   <body>    
       <div class="container" id="catalog" style="display:none">
@@ -557,6 +556,7 @@
             <p>A student at Herzen University and just a very </br> good person. Certified iOS Developer.</p>
         </div>
     </div>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
     <script>
         function look(elemId) {
     var elem = document.getElementById(elemId);
@@ -566,18 +566,9 @@
     </script>
     <script>
     VanillaTilt.init(document.querySelectorAll(".card"),{
-		max: 15,
-		speed: 1800,
-        glare: true,
-        "max-glare": 0.5,
+		max: 30,
+		speed: 400,
 	});
-    </script>
-    <script>
-        function look(elemId) {
-    var elem = document.getElementById(elemId);
- 
-    (elem.style.display === "none" && window.innerWidth) > 625?
-        elem.style.display = "flex" : elem.style.display = "none";}
     </script>
    </body>
 </html>
