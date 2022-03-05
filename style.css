@@ -23,7 +23,8 @@ body {
   padding: 10px 30px 10px 0px;
 }
 .wrapper .button a:visited {
-  color: rgba(0,0,0,0);
+  color: black;
+  text-decoration: none;
 }
 .container {
     position: absolute;
@@ -97,8 +98,6 @@ About
 Portfolio
 Скроллящийся список работ  видел в видосе индуса
 
-Contact
-Glassmorphiesm карточки с логотипами
 */
 .wrapper {
   position: absolute;
@@ -157,7 +156,7 @@ Glassmorphiesm карточки с логотипами
   background: #ff0000;
 }
 .wrapper .button .icon j{
-  font-size: 15px;
+  font-size: 20px;
   line-height: 45px;
   transition: all 0.3s ease-out;
 }
