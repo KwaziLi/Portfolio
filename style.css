@@ -20,6 +20,7 @@ body {
 .wrapper .button a {
   right: 0;
   text-decoration: none;
+  сolor: black;
   padding: 10px 30px 10px 0px;
 }
 .wrapper .button a:visited {
