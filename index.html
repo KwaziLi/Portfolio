@@ -6,7 +6,7 @@
     <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <script>
         const appHeight = () => {
         const doc = document.documentElement
@@ -16,8 +16,42 @@
     appHeight()
     </script>
 </head>
-  <body>    
-      <div class="container" id="catalog" style="display:none">
+  <body>
+    <div class="wrapper" id="icons" style="display:none">
+        <div class="button">
+            <a href="https://vk.com/kwazili" target="_blank">
+                <div class="icon">
+                    <j class="fa fa-vk"></j>
+                </div>
+            <span>Vkontakte</span>
+        </a>
+    </div>
+        <div class="button">
+            <a href="https://t.me/KwaziLi" target="_blank">
+                <div class="icon">
+                    <j class="fa fa-telegram"></j>
+                </div>
+            <span>Telegram</span>
+        </a>
+    </div>
+        <div class="button">
+            <a href="https://www.instagram.com/gusein_millionare.mindset/" target="_blank">
+                <div class="icon">
+                    <j class="fa fa-instagram"></j>
+                </div>
+            <span>Instagram</span>
+        </a>
+    </div>
+        <div class="button">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                <div class="icon">
+                    <j class="fa fa-youtube"></j>
+                </div>
+                <span>YouTube</span>
+            </a>
+        </div>
+    </div>
+      <div class="container" id="cards" style="display:none">
         <div class="card card_1">
             <!--<div class="card_content">
                 <h2>wow</h2>
@@ -28,8 +62,8 @@
         </div>
         <div class="card card_2">
             <div class="card_content">
-                <h3>Hyeta согласны?</h3>
-                <p>How blyat make reverse animation with js syka. Work in Progress</p>
+                <h3>Work in Progress</h3>
+                <p>Я в своём познании настолько преисполнился, что как будто бы уже 100 триллионов миллиардов лет проживаю на триллионах и триллионах таких же планет, понимаешь?</p>
             </div>
         </div>
     </div>
@@ -37,9 +71,9 @@
     <div class="header">
         <nav>
             <ul class="topmenu ">
-                <li><a href="#" class="topmenu_item" onclick="look('catalog'); return false;">About</a></li>
+                <li><a href="#" class="topmenu_item" onclick="look('cards');">About</a></li>
                 <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="topmenu_item" target="_blank">Portfolio</a></li>
-                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="topmenu_item" target="_blank">Contact</a></li>
+                <li><a href="#" class="topmenu_item" onclick="hook('icons');">Contact</a></li>
             </ul>
         </nav>  
         <!--О да, индусский код-->
@@ -558,16 +592,23 @@
     </div>
     <script type="text/javascript" src="vanilla-tilt.js"></script>
     <script>
-        function look(elemId) {
+    function look(elemId) {
     var elem = document.getElementById(elemId);
  
-    (elem.style.display === "none" && window.innerWidth) > 625?
-        elem.style.display = "flex" : elem.style.display = "none";}
+    (elem.style.display === "none" && window.innerWidth > 721 && window.innerHeight > 569)?
+        elem.style.display = "flex" : elem.style.display = "none";
+    }
+    function hook(elemId) {
+    var elem = document.getElementById(elemId);
+ 
+    (elem.style.display === "none" && window.innerWidth > 370 && window.innerHeight > 150)?
+        elem.style.display = "flex" : elem.style.display = "none";
+    }
     </script>
     <script>
     VanillaTilt.init(document.querySelectorAll(".card"),{
 		max: 30,
-		speed: 400,
+		speed: 3000,
 	});
     </script>
    </body>
