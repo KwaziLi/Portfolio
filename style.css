@@ -19,9 +19,8 @@ body {
 }
 .wrapper .button a {
   right: 0;
-  text-decoration: none;
   сolor: black;
-  padding: 10px 30px 10px 0px;
+  text-decoration: none;
 }
 .wrapper .button a:visited {
   color: black;
@@ -99,6 +98,8 @@ About
 Portfolio
 Скроллящийся список работ  видел в видосе индуса
 
+Contact
+Glassmorphiesm карточки с логотипами
 */
 .wrapper {
   position: absolute;
@@ -132,7 +133,7 @@ Portfolio
   transition: all 0.3s ease-out;
 }
 .wrapper .button:hover {
-  width: 160px;
+  width: 170px;
 }
 .wrapper .button .icon {
   display: inline-block;
@@ -165,9 +166,9 @@ Portfolio
   color: #fff;
 }
 .wrapper .button span {
-  font-size: 13px;
+  font-size: 17px;
   font-weight: 500;
-  line-height: 45px;
+  line-height: 10px;
   margin-left: 10px;
   transition: all 0.3s ease-out;
 }
