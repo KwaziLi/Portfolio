@@ -576,8 +576,7 @@ li {
   .wrapper {
   position: absolute;
   z-index: 1;
-  right: 25%;
-  left: 27%;
+  right: 13%;
   top: 100px;
   display: none;
   opacity:0;
