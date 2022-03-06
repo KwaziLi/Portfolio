@@ -577,7 +577,7 @@ li {
   position: absolute;
   z-index: 1;
   right: 25%;
-  left: 27%
+  left: 27%;
   top: 100px;
   display: none;
   opacity:0;
