@@ -17,6 +17,38 @@
     </script>
 </head>
   <body>
+    <div class="slider" id="slider" style="display:none">
+        <div class="slides">
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+          <div class="slide first">
+            <img src="1.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="2.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="3.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="4.jpg" alt="">
+          </div>
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+        </div>
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+      </div>
     <div class="wrapper" id="icons" style="display:none">
         <div class="button">
             <a href="https://vk.com/kwazili" target="_blank">
@@ -35,7 +67,7 @@
         </a>
     </div>
         <div class="button">
-            <a href="https://www.instagram.com/gusein_millionare.mindset/" target="_blank">
+            <a href="https://www.instagram.com/gusein.gasanov/" target="_blank">
                 <div class="icon">
                     <j class="fa fa-instagram"></j>
                 </div>
@@ -43,7 +75,7 @@
         </a>
     </div>
         <div class="button">
-            <a href="https://www.youtube.com/watch?v=8ozWoQGBYZ0" target="_blank">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
                 <div class="icon">
                     <j class="fa fa-youtube"></j>
                 </div>
@@ -63,7 +95,7 @@
         <div class="card card_2">
             <div class="card_content">
                 <h3>Work in Progress</h3>
-                <p>Я в своём познании настолько преисполнился, что как будто бы уже 100 триллионов миллиардов лет проживаю на триллионах и триллионах таких же планет, понимаешь?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin aliquet dolor, semper iaculis leo ultrices ut. Fusce pellentesque dolor ante, a pharetra mi pellentesque porttitor. Fusce lacus est, sagittis eget massa eget, tincidunt commodo libero. Nulla ultricies scelerisque urna eu tincidunt. Nulla ut arcu sapien. Donec nec interdum orci. Sed tempus ligula massa, eu elementum augue ornare ac. Aliquam elementum ut diam nec rhoncus. Morbi pellentesque vehicula orci at faucibus. Mauris ac ex eget turpis scelerisque malesuada vel non diam. Curabitur dapibus varius pharetra. Integer vehicula lectus ut lectus ultrices volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
         </div>
     </div>
@@ -72,7 +104,7 @@
         <nav>
             <ul class="topmenu ">
                 <li><a href="#" class="topmenu_item" onclick="look('cards');">About</a></li>
-                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="topmenu_item" target="_blank">Portfolio</a></li>
+                <li><a href="#" class="topmenu_item" onclick="gook('slider');">Portfolio</a></li>
                 <li><a href="#" class="topmenu_item" onclick="hook('icons');">Contact</a></li>
             </ul>
         </nav>  
@@ -604,12 +636,28 @@
     (elem.style.display === "none" && window.innerWidth > 370 && window.innerHeight > 150)?
         elem.style.display = "flex" : elem.style.display = "none";
     }
+    function gook(elemId) {
+    var elem = document.getElementById(elemId);
+ 
+    (elem.style.display === "none" && window.innerWidth > 721 && window.innerHeight > 569)?
+        elem.style.display = "flex" : elem.style.display = "none";
+    }
     </script>
     <script>
     VanillaTilt.init(document.querySelectorAll(".card"),{
 		max: 30,
 		speed: 3000,
 	});
+    </script>
+    <script type="text/javascript">
+            var counter = 1;
+            setInterval(function(){
+              document.getElementById('radio' + counter).checked = true;
+              counter++;
+              if(counter > 4){
+                counter = 1;
+              }
+            }, 5000);
     </script>
    </body>
 </html>

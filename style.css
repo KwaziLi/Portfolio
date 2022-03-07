@@ -17,6 +17,109 @@ body {
    -ms-user-select: none;
    user-select: none;
 }
+.slider {
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    top: 39%;
+    right: 0;
+    margin-right: 90px;
+    z-index: 20;
+    display: flex;
+    opacity: 0;
+    animation: slider 3s 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    }
+    @keyframes slider{
+    0%{
+    opacity:0;
+    }
+    100% {
+    opacity:1;
+}
+}
+.slides {
+    position: absolute;
+    z-index: 10;
+    width: 500%;
+    height: 300px;
+    display: flex;
+}
+.slides input {
+    display: none;
+}
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+.slide img {
+    width: 600px;
+    height: 300px;
+}
+.navigation-manual {
+    position: absolute;
+    width: 600px;
+    margin-top: 260px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn {
+    border: 2px solid #fd4766;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    z-index: 100;
+}
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+.manual-btn:hover {
+    background: #fd4766;
+}
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+#radio4:checked ~ .first {
+    margin-left: -60%;
+}
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 600px;
+    justify-content: center;
+    margin-top: 260px;
+}
+.navigation-auto div {
+    border: 2px solid #fd4766;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background: #fd4766;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background: #fd4766;
+} 
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background: #fd4766;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+    background: #fd4766;
+}
 .wrapper .button a {
   right: 0;
   padding: 10px 20px 10px 0px;
@@ -75,9 +178,9 @@ body {
     background-size: 600px 800px;
 }
 .container .card_2 {
-  display: table-cell;
-  vertical-align: top;
-  margin:0px 90px 0 55px;
+    display: table-cell;
+    vertical-align: top;
+    margin:0px 90px 0 55px;
 }
 .container .card .card_content {
     padding: 20px;
@@ -491,7 +594,7 @@ section .row:nth-child(even) div:nth-child(2) {
   border-style: solid;
   border-color: white;
   border-width: 1px 0px 1px 1px;
-  transition: .8s;
+  transition: .3s;
 }
 .wrapper .button:nth-child(1):hover .icon {
   background: #1778fa;
